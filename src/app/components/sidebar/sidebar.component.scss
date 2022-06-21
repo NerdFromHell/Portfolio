@@ -1,0 +1,120 @@
+mat-toolbar {
+  background: #034999;
+  color: white;
+  height: 3.5rem;
+}
+.hideToolbarAnimation{
+  transition: 0.3s;
+  height: 0rem;
+}
+.showToolbarAnimation{
+  transition: 0.3s;
+  height: 3.5rem;
+}
+
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+mat-sidenav {
+  margin-top: 16px;
+  margin-right: 0px;
+  width: 200px;
+  border-right: none;
+  background: #034999;
+  color: white;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 16px;
+  text-align: center;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn{
+  width: 100%;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-self:flex-start;
+
+  background-color: #034999;
+  border: none;
+
+  font-size: 1rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+  mat-icon {
+    margin-right: 8px;
+  }
+}
+.btn:hover{
+  color: aquamarine;
+}
+
+.mat-icon-button {
+  color: whitesmoke;
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 40px;
+  background: rgba(255, 255, 255, 0);
+}
+
+
+.avatar {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+
+
+
+
+.hideShowToolbar{
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important;
+  position: fixed;
+  top:0px;
+}
+
+.hideToolbar {
+   -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.showToolbar{
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}

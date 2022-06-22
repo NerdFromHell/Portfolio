@@ -1,20 +1,8 @@
-<mat-toolbar [ngClass]="hideToolBar ? 'hideToolbarAnimation' : 'showToolbarAnimation'">
-  <button
-    class="btnOption"
-    mat-icon-button
-    (click)="sidenav.toggle()"
-  >
-  <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-  <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-</button>
-</mat-toolbar>
-
 <mat-sidenav-container>
-  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
-    <img
-      class="avatar mat-elevation-z8"
-      src="https://sguru.org/wp-content/uploads/2017/06/cool-anime-profile-pictures-44c773de9847d476e4731da0af23318e-manga-eyes-dark-anime.jpg"
-    />
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8" fixedInViewport="true"
+    [ngClass]="status ? 'mat-sidenav-mode-over-margin' : 'mat-sidenav-mode-side-margin '">
+    <img class="avatar mat-elevation-z8"
+      src="https://sguru.org/wp-content/uploads/2017/06/cool-anime-profile-pictures-44c773de9847d476e4731da0af23318e-manga-eyes-dark-anime.jpg" />
 
     <h4 class="name">Yoram Izilov</h4>
     <p class="designation">Software Engineer</p>
@@ -38,7 +26,8 @@
 
     <button mat-button class="btn">
       <mat-icon>help</mat-icon>
-      <span>Help</span>
+      <span>contact me</span>
+      <a [routerLink]="['/contact-me']" routerLinkActive="active">text</a>
     </button>
   </mat-sidenav>
 </mat-sidenav-container>

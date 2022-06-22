@@ -1,7 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { NavigationService } from './../../services/navigation.service';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
-import { delay, filter } from 'rxjs/operators';
+import { delay } from 'rxjs/operators';
 import { NavigationEnd, Router } from '@angular/router';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { MatToolbar } from '@angular/material/toolbar';
@@ -16,36 +17,28 @@ import { interval } from 'rxjs';
 export class SidebarComponent {
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
-  hideToolBar!: Boolean;
+  status!: boolean;
 
-  constructor(private observer: BreakpointObserver) {
+  constructor(private _navigationService: NavigationService) {
+    _navigationService.toolbarVisibilityChange.subscribe((value) => {
+      if (!value) {
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+        this.status = !value;
+      } else {
+        this.sidenav.mode = 'side';
+        this.sidenav.close();
+        this.status = !value;
+      }
+    });
+    _navigationService.sidebarVisibilityChange.subscribe((value) => {
+      if (!value) {
+        this.sidenav.close();
+      } else {
+        this.sidenav.open();
+      }
+    });
   }
 
-  ngAfterViewInit() {
-    this.observer
-      .observe(['(max-width: 800px)'])
-      .pipe(delay(1), untilDestroyed(this))
-      .subscribe((res) => {
-        if (res.matches) {
-          this.sidenav.mode = 'over';
-          this.sidenav.close();
-          this.hideToolBar = false;
-        } else {
-          this.sidenav.mode = 'side';
-          this.sidenav.open();
-          this.hideToolBar = true;
-        }
-      });
 
-    // this.router.events
-    //   .pipe(
-    //     untilDestroyed(this),
-    //     filter((e) => e instanceof NavigationEnd)
-    //   )
-    //   .subscribe(() => {
-    //     if (this.sidenav.mode === 'over') {
-    //       this.sidenav.close();
-    //     }
-    //   });
-  }
 }

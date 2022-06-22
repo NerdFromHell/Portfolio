@@ -1,0 +1,9 @@
+<mat-toolbar [ngClass]="hideToolBar ? 'hideToolbarAnimation' : 'showToolbarAnimation'">
+
+  <button class="btnOption" mat-icon-button (click)="this.toggleSidebar()">
+
+    <mat-icon *ngIf="!sidebarToggle"> menu </mat-icon>
+    <mat-icon *ngIf="sidebarToggle"> close </mat-icon>
+
+  </button>
+</mat-toolbar>

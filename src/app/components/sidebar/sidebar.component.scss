@@ -1,24 +1,8 @@
-mat-toolbar {
-  background: #034999;
-  color: white;
-  height: 3.5rem;
-}
-.hideToolbarAnimation{
-  transition: 0.3s;
-  height: 0rem;
-}
-.showToolbarAnimation{
-  transition: 0.3s;
-  height: 3.5rem;
-}
-
-
 mat-sidenav-container {
   height: calc(100vh - 65px);
 }
 
 mat-sidenav {
-  margin-top: 16px;
   margin-right: 0px;
   width: 200px;
   border-right: none;
@@ -31,18 +15,26 @@ mat-sidenav {
   text-align: center;
 }
 
+.mat-sidenav-mode-over-margin {
+  margin-top: 3.7rem;
+}
+
+.mat-sidenav-mode-side-margin {
+  margin-top: 1rem;
+}
+
 mat-divider {
   margin-top: 16px;
   margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.btn{
+.btn {
   width: 100%;
-  color:white;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-self:flex-start;
+  align-self: flex-start;
 
   background-color: #034999;
   border: none;
@@ -55,7 +47,8 @@ mat-divider {
     margin-right: 8px;
   }
 }
-.btn:hover{
+
+.btn:hover {
   color: aquamarine;
 }
 

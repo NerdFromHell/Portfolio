@@ -1,0 +1,15 @@
+mat-toolbar {
+    background: #034999;
+    color: white;
+    height: 3.5rem;
+}
+
+.hideToolbarAnimation {
+    transition: 0.3s;
+    height: 0rem;
+}
+
+.showToolbarAnimation {
+    transition: 0.3s;
+    height: 3.5rem;
+}

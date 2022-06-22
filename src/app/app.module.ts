@@ -7,13 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // angular flex 
 import { FlexLayoutModule } from '@angular/flex-layout';
 // angular materials
+import { MatInputModule } from '@angular/material/input'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 // components
-import { AppRoutingModule, RoutingPagesComponents } from './app-routing.module';
+import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
@@ -23,7 +24,7 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     AppComponent,
     SidebarComponent,
     EmailFormComponent,
-    RoutingPagesComponents,
+    RoutingPagesComponent,
     TopbarComponent
   ],
   imports: [
@@ -36,9 +37,11 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     MatIconModule,
     MatDividerModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatInputModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -5,12 +5,12 @@
 
 <form autocomplete="off" class="email_form">
   <ul style="list-style: none;" class="form-group">
-    <div class="first_row">
-      <li>
+    <div>
+      <li fxFlex="48">
         <input class="line-animation" placeholder="Name" type="text" name="name">
         <div class="line"></div>
       </li>
-      <li>
+      <li fxFlexOffset="2" fxFlex>
         <input class="line-animation" placeholder="Email" type="email" name="email">
         <div class="line"></div>
       </li>
@@ -20,7 +20,9 @@
       <div class="line"></div>
     </li>
     <li class="third_row">
-      <textarea class="line-animation" placeholder="Message"></textarea>
+
+      <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="15" class="line-animation"
+        placeholder="Message"></textarea>
       <div class="line"></div>
     </li>
     <li class="submit">

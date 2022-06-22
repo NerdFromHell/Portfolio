@@ -12,4 +12,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { }
-export const RoutingPagesComponents = [ContactMeComponent];
+export const RoutingPagesComponent = [ContactMeComponent];

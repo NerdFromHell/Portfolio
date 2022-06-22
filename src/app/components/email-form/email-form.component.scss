@@ -1,11 +1,10 @@
-.email_form {
-  display: flex;
+* {
+  box-sizing: border-box;
 }
 
-.first_row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.email_form {
+  width: 100%;
+  display: block;
 }
 
 .second_row>input {
@@ -13,17 +12,25 @@
 }
 
 .third_row>textarea {
-  width: 556px;
-  height: 168px;
+  width: 100%;
 }
+
+button,
+input {
+  overflow: visible;
+  width: 100%;
+}
+
 
 input[type=text],
 input[type=email],
 textarea {
+  font-size: 1.6rem;
+  line-height: 1.5;
   border: none;
   background-color: whitesmoke;
   display: block;
-  box-sizing: border-box;
+  padding-left: 1rem;
 }
 
 input[type=text]:focus,

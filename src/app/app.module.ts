@@ -10,11 +10,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { EmailFormComponent } from './components/email-form/email-form.component';
+import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
+    EmailFormComponent,
+    ContactMeComponent
   ],
   imports: [
     RouterModule,

@@ -1,12 +1,9 @@
-
 <mat-toolbar [ngClass]="hideToolBar ? 'hideToolbarAnimation' : 'showToolbarAnimation'">
-  <!-- *ngIf="sidenav.mode === 'over'" -->
-  <!-- [ngClass]="hideToolBar"  -->
   <button
-  class="btnOption"
-  mat-icon-button
-  (click)="sidenav.toggle()"
->
+    class="btnOption"
+    mat-icon-button
+    (click)="sidenav.toggle()"
+  >
   <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
   <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
 </button>

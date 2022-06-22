@@ -14,9 +14,6 @@ import { interval } from 'rxjs';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-
-
-
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
   hideToolBar!: Boolean;

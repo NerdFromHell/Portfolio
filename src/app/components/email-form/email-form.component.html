@@ -11,7 +11,7 @@
         <div class="line"></div>
       </li>
       <li fxFlexOffset="2" fxFlex>
-        <input class="line-animation" placeholder="Email" type="email" name="email">
+        <input class="line-animation" placeholder="Email" type="email" id="email"  >
         <div class="line"></div>
       </li>
     </div>
@@ -22,11 +22,17 @@
     <li class="third_row">
 
       <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="15" class="line-animation"
-        placeholder="Message"></textarea>
+        placeholder="Message" id="message"></textarea>
       <div class="line"></div>
     </li>
-    <li class="submit">
-      <button>submit</button>
+    <li class="submit" fxLayout="row-reverse">
+
+      <button (click)="validate($event)">
+        <div>
+          Send message!
+        </div>
+      </button>
+
     </li>
   </ul>
 

@@ -13,6 +13,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
 // components
 import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -38,7 +39,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     MatDividerModule,
     AppRoutingModule,
     FlexLayoutModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]

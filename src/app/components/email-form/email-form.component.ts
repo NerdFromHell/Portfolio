@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmailFormComponent {
 
-  constructor() { }
-
   validate(evt: Event){
     evt.preventDefault();
     var email: string = (<HTMLInputElement>document.getElementById('email')).value;
@@ -23,6 +21,6 @@ export class EmailFormComponent {
       return;
     }
     alert('nice')
-
   }
+
 }

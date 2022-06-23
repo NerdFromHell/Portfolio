@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// angular flex 
+// angular flex
 import { FlexLayoutModule } from '@angular/flex-layout';
 // angular materials
 import { MatInputModule } from '@angular/material/input'

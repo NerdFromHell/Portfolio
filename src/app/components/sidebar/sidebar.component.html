@@ -9,25 +9,40 @@
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="btn">
-      <mat-icon>home</mat-icon>
-      <span>Home</span>
-    </button>
-    <button mat-button class="btn">
-      <mat-icon>person</mat-icon>
-      <span>Profile</span>
-    </button>
-    <button mat-button class="btn">
-      <mat-icon>info</mat-icon>
-      <span>About</span>
-    </button>
+    <a [routerLink]="['/home']" routerLinkActive="active" style="text-decoration: none; color: inherit;">
+      <button mat-button class="btn">
+        <mat-icon>home</mat-icon>
+        <span>
+          Home
+        </span>
+      </button>
+    </a>
+    <a [routerLink]="['/profile']" routerLinkActive="active" style="text-decoration: none; color: inherit;">
+      <button mat-button class="btn">
+        <mat-icon>person</mat-icon>
+        <span>
+          profile
+        </span>
+      </button>
+    </a>
+    <a [routerLink]="['/about']" routerLinkActive="active" style="text-decoration: none; color: inherit;">
+      <button mat-button class="btn">
+        <mat-icon>info</mat-icon>
+        <span>
+          about
+        </span>
+      </button>
+    </a>
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="btn">
-      <mat-icon>help</mat-icon>
-      <span>contact me</span>
-      <a [routerLink]="['/contact-me']" routerLinkActive="active">text</a>
-    </button>
+    <a [routerLink]="['/contact-me']" routerLinkActive="active" style="text-decoration: none; color: inherit;">
+      <button mat-button class="btn">
+        <mat-icon>help</mat-icon>
+        <span>
+          Contact me
+        </span>
+      </button>
+    </a>
   </mat-sidenav>
 </mat-sidenav-container>

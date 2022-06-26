@@ -1,13 +1,14 @@
-<div class="bg-gray-600" fxLayout="column" fxLayoutAlign="start stretch">
-    <div>
-        <app-topbar></app-topbar>
-    </div>
-    <div fxLayout="row" fxLayoutAlign="stretch start">
-        <div class="bg-yellow-200 test" id="course-sidebar">
-            <app-sidebar></app-sidebar>
-        </div>
-        <div class="bg-blue-500" id="module-display">
-            <app-contact-me></app-contact-me>
-        </div>
-    </div>
+<div fxLayout="column" fxLayoutAlign="start stretch">
+  <app-topbar></app-topbar>
 </div>
+<div fxLayout="row">
+  <div >
+    <app-sidebar></app-sidebar>
+  </div>
+  <div fxFlex="grow">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+

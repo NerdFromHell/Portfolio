@@ -19,6 +19,8 @@ import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     SidebarComponent,
     EmailFormComponent,
     RoutingPagesComponent,
-    TopbarComponent
+    TopbarComponent,
+    HomepageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     RouterModule,

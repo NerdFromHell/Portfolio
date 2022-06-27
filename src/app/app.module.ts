@@ -23,10 +23,10 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    TopbarComponent,
     SidebarComponent,
     EmailFormComponent,
     RoutingPagesComponent,
-    TopbarComponent,
   ],
   imports: [
     RouterModule,

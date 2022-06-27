@@ -5,9 +5,11 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
     { path: 'home', component: HomepageComponent },
+    { path: 'profile', component: ProfileComponent },
     { path: 'skills', component: SkillsComponent },
     { path: 'projects', component: ProjectsComponent},
     { path: 'contact-me', component: ContactMeComponent },
@@ -22,7 +24,9 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const RoutingPagesComponent = [
   HomepageComponent,
+  ProfileComponent,
   SkillsComponent,
+  ProjectsComponent,
   ContactMeComponent,
   PageNotFoundComponent
 ];

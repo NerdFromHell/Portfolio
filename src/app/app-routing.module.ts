@@ -4,10 +4,12 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 const routes: Routes = [
     { path: 'home', component: HomepageComponent },
     { path: 'skills', component: SkillsComponent },
+    { path: 'projects', component: ProjectsComponent},
     { path: 'contact-me', component: ContactMeComponent },
     { path: '**', component: PageNotFoundComponent }
 ];

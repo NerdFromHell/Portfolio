@@ -1,10 +1,28 @@
-<mat-card class="example-card" style="z-index: 0;">
-  <mat-card-title>Contact me</mat-card-title>
-  <mat-card-subtitle>fullstack</mat-card-subtitle>
-  <mat-card-content>
-    hey
-  </mat-card-content>
-  <mat-card-content>
-    <app-email-form></app-email-form>
-  </mat-card-content>
-</mat-card>
+<div fxLayout="row" fxLayoutAlign="start stretch" >
+  <div fxFlex="70">
+    <mat-card style="z-index: 0;">
+      <mat-card-title>Contact me</mat-card-title>
+      <mat-card-subtitle>fullstack</mat-card-subtitle>
+      <mat-card-content>
+        hey
+      </mat-card-content>
+      <mat-card-content>
+        <app-email-form></app-email-form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="none center" fxFlex="30">
+    <p>
+      other ways:
+    </p>
+    <img
+      width="60%"
+      src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+    >
+    <img
+      width="60%"
+      src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+    >
+  </div>
+</div>

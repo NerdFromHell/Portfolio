@@ -1,4 +1,4 @@
-*{
+* {
   background-color: transparent;
 }
 
@@ -54,7 +54,8 @@ mat-divider {
   }
 }
 
-.btn:hover, .closeBtn:hover {
+.btn:hover,
+.closeBtn:hover {
   color: aquamarine;
 }
 
@@ -90,18 +91,21 @@ mat-divider {
   color: lightgrey;
 }
 
-img{
+img {
   margin-left: 2px;
 }
 
 
-.sideMenuText{
+.sideMenuText {
   padding-left: 0.3rem;
 }
-.openMenuColorIcon, .sideMenuText{
-  color:black;
+
+.openMenuColorIcon,
+.sideMenuText {
+  color: black;
 }
-.openMenuBtn{
+
+.openMenuBtn {
   border: none;
   cursor: pointer;
 }

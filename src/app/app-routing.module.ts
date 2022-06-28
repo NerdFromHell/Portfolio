@@ -8,18 +8,18 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
-    { path: '', component: HomepageComponent },
-    { path: 'home', component: HomepageComponent },
-    { path: 'profile', component: ProfileComponent },
-    { path: 'skills', component: SkillsComponent },
-    { path: 'projects', component: ProjectsComponent},
-    { path: 'contact-me', component: ContactMeComponent },
-    { path: '**', component: PageNotFoundComponent }
+  { path: '', component: HomepageComponent, data: { animation: 'home' } },
+  { path: 'home', component: HomepageComponent, data: { animation: 'home' } },
+  { path: 'profile', component: ProfileComponent, data: { animation: 'profile' } },
+  { path: 'skills', component: SkillsComponent, data: { animation: 'skills' } },
+  { path: 'projects', component: ProjectsComponent, data: { animation: 'projects' } },
+  { path: 'contact-me', component: ContactMeComponent, data: { animation: 'contactme' } },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 
 export class AppRoutingModule { }

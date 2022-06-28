@@ -8,6 +8,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
+    { path: '', component: HomepageComponent },
     { path: 'home', component: HomepageComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'skills', component: SkillsComponent },

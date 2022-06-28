@@ -23,4 +23,8 @@ export class EmailFormComponent {
     alert('nice')
   }
 
+  onTest(){
+    alert('hey')
+  }
+
 }

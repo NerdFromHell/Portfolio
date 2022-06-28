@@ -64,5 +64,27 @@
         </span>
       </button>
     </a>
+
+    <mat-divider></mat-divider>
+    <div *ngIf="sidenav.opened && !status">
+      <button class="btnOption" mat-icon-button (click)="sidenav.toggle()">
+        <div class="closeBtn" fxLayoutAlign="center end">
+          <mat-icon>close</mat-icon>
+        </div>
+      </button>
+    </div>
   </mat-sidenav>
 </mat-sidenav-container>
+
+<div *ngIf="!sidenav.opened && !status" fxLayout="column" fxFlex="100" fxLayoutAlign="center">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button class="openMenuBtn" (click)="sidenav.toggle()">
+      <p class="sideMenuText">
+        m<br>e<br>n<br>u
+      </p>
+    </button>
+    <button  mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon class="openMenuColorIcon">keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+</div>

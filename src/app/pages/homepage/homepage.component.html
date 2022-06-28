@@ -1,20 +1,16 @@
 <div fxLayout="row" fxLayoutAlign="space-evenly center">
-    <div fxLayout="column" fxFlex="50">
-      <h1>
-        Yoram Izilov's
-        <br>
-        Portfolio
-      </h1>
-      <a [routerLink]="['/contact-me']" routerLinkActive="active" style="text-decoration: none; color: inherit;">
-        <app-btn
-          text="Contact me!"
-        ></app-btn>
-      </a>
-    </div>
-    <div fxFlex="50">
-      <img
-        width="50%"
-        src="https://cdn.wallpapersafari.com/78/64/JCAQVk.png"
-      />
-    </div>
+  <div fxLayout="column" fxFlex="50">
+    <h1>
+      Yoram Izilov's
+      <br>
+      Portfolio
+    </h1>
+    <a [routerLink]="['/contact-me']" routerLinkActive="active"
+      style="text-decoration: none; color: inherit; z-index: 1;">
+      <app-btn text="Contact me!"></app-btn>
+    </a>
+  </div>
+  <div fxFlex="50">
+    <img width="50%" src="https://cdn.wallpapersafari.com/78/64/JCAQVk.png" />
+  </div>
 </div>

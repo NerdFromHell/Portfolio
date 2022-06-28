@@ -7,6 +7,7 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
+
   margin-right: 0px;
   width: 200px;
   border-right: none;
@@ -25,7 +26,7 @@ mat-sidenav {
 
 .mat-sidenav-mode-side-margin {
   margin-top: 0.5rem;
-  margin-bottom: 00.5rem;
+  margin-bottom: 0.5rem;
 }
 
 mat-divider {
@@ -53,7 +54,7 @@ mat-divider {
   }
 }
 
-.btn:hover {
+.btn:hover, .closeBtn:hover {
   color: aquamarine;
 }
 
@@ -67,7 +68,6 @@ mat-divider {
   line-height: 40px;
   background: rgba(255, 255, 255, 0);
 }
-
 
 .avatar {
   margin-top: 10px;
@@ -92,4 +92,16 @@ mat-divider {
 
 img{
   margin-left: 2px;
+}
+
+
+.sideMenuText{
+  padding-left: 0.3rem;
+}
+.openMenuColorIcon, .sideMenuText{
+  color:black;
+}
+.openMenuBtn{
+  border: none;
+  cursor: pointer;
 }

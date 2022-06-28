@@ -1,9 +1,7 @@
 import { NavigationService } from './../../services/navigation.service';
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { delay } from 'rxjs/operators';
-import { NavigationEnd, Router} from '@angular/router';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { UntilDestroy } from '@ngneat/until-destroy';
 
 @UntilDestroy()
 @Component({
@@ -37,4 +35,7 @@ export class SidebarComponent {
     });
   }
 
+  toggleSidebar(){
+    this.sidenav.toggle();
+  }
 }

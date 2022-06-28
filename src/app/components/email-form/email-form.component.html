@@ -20,14 +20,12 @@
         placeholder="Message" id="message"></textarea>
       <div class="line"></div>
     </li>
-    <li class="submit" fxLayout="row-reverse">
-
-      <button (click)="validate($event)">
-        <div>
-          Send message!
-        </div>
-      </button>
-
+    <li dir="rtl" >
+      <app-btn
+        (btnClick)="validate($event)"
+        text="!Send message"
+      >
+      </app-btn>
     </li>
   </ul>
 

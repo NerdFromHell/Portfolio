@@ -19,6 +19,7 @@ import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { BtnComponent } from './components/btn/btn.component';
 
 @NgModule({
   declarations: [
@@ -27,18 +28,19 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     SidebarComponent,
     EmailFormComponent,
     RoutingPagesComponent,
+    BtnComponent,
   ],
   imports: [
     RouterModule,
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    AppRoutingModule,
-    FlexLayoutModule,
     MatInputModule,
     MatCardModule
   ],

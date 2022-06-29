@@ -7,7 +7,6 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
-
   margin-right: 0px;
   width: 200px;
   border-right: none;
@@ -98,6 +97,10 @@ img {
 
 .sideMenuText {
   padding-left: 0.3rem;
+}
+
+.openMenuIconBtn{
+  right: 15px;
 }
 
 .openMenuColorIcon,

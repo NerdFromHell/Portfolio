@@ -5,11 +5,11 @@ export const fader =
     transition('home => profile, home => skills, home => projects, home => contactme, home => profile, profile => skills, profile => projects, profile => contactme, skills => projects, skills => contactme, projects => contactme',
       [
         query(':enter, :leave', [
-
           style({
+            'z-index':'1',
             position: 'absolute',
             height: '100%',
-            opacity: 1,
+            opacity: 0,
             transform: 'translate3d(0,100%,0)'
           }),
         ]),
@@ -23,9 +23,10 @@ export const fader =
       [
         query(':enter, :leave', [
           style({
+            'z-index':'1',
             position: 'absolute',
             height: '100%',
-            opacity: 1,
+            opacity: 0,
             transform: 'translate3d(0,-100%,0)'
           }),
         ]),

@@ -20,6 +20,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { BtnComponent } from './components/btn/btn.component';
+import { ArrowUpComponent } from './components/arrow-up/arrow-up.component';
+import { ArrowDownComponent } from './components/arrow-down/arrow-down.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { BtnComponent } from './components/btn/btn.component';
     EmailFormComponent,
     RoutingPagesComponent,
     BtnComponent,
+    ArrowUpComponent,
+    ArrowDownComponent,
   ],
   imports: [
     RouterModule,

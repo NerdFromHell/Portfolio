@@ -22,7 +22,7 @@ export class SidebarComponent {
         this.status = !value;
       } else {
         this.sidenav.mode = 'side';
-        this.sidenav.open();
+        this.sidenav.close();
         this.status = !value;
       }
     });

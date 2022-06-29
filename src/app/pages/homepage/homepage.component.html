@@ -1,12 +1,21 @@
-<div fxLayout="row" fxLayoutAlign="space-evenly center">
-  <div fxLayout="column" fxFlex="50">
-    <h1>
-      Yoram Izilov's
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlexFill>
+  <div fxLayout="column" fxFlex="50" fxLayoutAlign="space-evenly start" fxFlexFill>
+    <div class="title">
+      <h1>
+        Yoram Izilov's
+        <br>
+        Portfolio
+      </h1>
+    </div>
+
+    <div class="text-body">
+      this is some long text to tell a bit about myself,
       <br>
-      Portfolio
-    </h1>
+      don't forget to change it a bit before realese please
+    </div>
+
     <a [routerLink]="['/contact-me']" routerLinkActive="active"
-      style="text-decoration: none; color: inherit; z-index: 1;">
+      style="text-decoration: none; color: inherit; z-index: 1; width: 220px;">
       <app-btn text="Contact me!"></app-btn>
     </a>
   </div>

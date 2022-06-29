@@ -1,3 +1,13 @@
+$titleColor: #00C0A9;
+
+* {
+  outline: 1px solid limegreen;
+}
+
 div {
   margin-left: 2%;
+}
+
+.title {
+  color: $titleColor;
 }

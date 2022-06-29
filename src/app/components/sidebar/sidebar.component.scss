@@ -1,3 +1,8 @@
+$backgroundColor: #0E9594;
+$textColor: black;
+$iconColor: black;
+$hoverTextColor: black;
+
 * {
   background-color: transparent;
 }
@@ -10,8 +15,8 @@ mat-sidenav {
   margin-right: 0px;
   width: 200px;
   border-right: none;
-  background: #034999;
-  color: white;
+  background: $backgroundColor;
+  color: $textColor;
   border-radius: 10px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -36,12 +41,12 @@ mat-divider {
 
 .btn {
   width: 100%;
-  color: white;
+  color: $textColor;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
 
-  background-color: #034999;
+  background-color: $backgroundColor;
   border: none;
 
   font-size: 1rem;
@@ -50,12 +55,17 @@ mat-divider {
 
   mat-icon {
     margin-right: 8px;
+    color: $iconColor;
   }
 }
 
 .btn:hover,
-.closeBtn:hover {
-  color: aquamarine;
+.close-icon-btn:hover {
+  color: $hoverTextColor;
+
+  mat-icon {
+    color: $hoverTextColor;
+  }
 }
 
 .mat-icon-button {
@@ -87,25 +97,34 @@ mat-divider {
 .designation {
   margin-top: 2px;
   font-size: 0.7rem;
-  color: lightgrey;
+  color: $textColor;
 }
 
 img {
   margin-left: 2px;
 }
 
+.closeBtn {
+  height: 100%;
+  left: 0;
+}
+
+.menu-text-body {
+  // position: absolute;
+  text-align: center;
+}
 
 .sideMenuText {
   padding-left: 0.3rem;
 }
 
-.openMenuIconBtn{
+.openMenuIconBtn {
   right: 15px;
 }
 
 .openMenuColorIcon,
 .sideMenuText {
-  color: black;
+  color: $textColor;
 }
 
 .openMenuBtn {

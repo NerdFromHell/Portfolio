@@ -1,13 +1,24 @@
 <div class="background-style">
   <div fxLayout="column" fxLayoutAlign="start stretch">
-    <app-topbar></app-topbar>
+    <app-topbar style="z-index: 998;"></app-topbar>
   </div>
-  <div fxLayout="row">
+
+  <div fxLayout="column" fxFlexFill >
     <div style="z-index: 999;">
-      <app-sidebar></app-sidebar>
+      <app-arrow-up></app-arrow-up>
     </div>
-    <div [@routeAnimations]="prepareRoute(outlet)">
-      <router-outlet #outlet="outlet"></router-outlet>
+
+    <div fxLayout="row">
+      <div style="z-index: 999;">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div [@routeAnimations]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </div>
+    </div>
+
+    <div style="z-index: 999;">
+      <app-arrow-down></app-arrow-down>
     </div>
   </div>
 </div>

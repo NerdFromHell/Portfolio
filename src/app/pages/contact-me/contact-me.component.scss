@@ -1,3 +1,23 @@
+$titleColor: #122631;
+
+*
+{
+  outline: 1px solid lime;
+}
+
 img{
   margin-top: 5%;
 }
+
+mat-card{
+  background-color: transparent;
+}
+
+mat-card-title{
+  color:$titleColor;
+}
+
+.card{
+  max-width:60%;
+}
+

@@ -1,7 +1,7 @@
-$backgroundColor: #0E9594;
-$textColor: black;
-$iconColor: black;
-$hoverTextColor: black;
+$backgroundColor: #436ef8;
+$textColor: white;
+$iconColor: white;
+$hoverTextColor: #122631;
 
 * {
   background-color: transparent;
@@ -124,7 +124,7 @@ img {
 
 .openMenuColorIcon,
 .sideMenuText {
-  color: $textColor;
+  color: $hoverTextColor
 }
 
 .openMenuBtn {

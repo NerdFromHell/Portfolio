@@ -1,13 +1,20 @@
-$titleColor: #00C0A9;
+$titleColor: #436ef8;
+$textColor: white;
 
 * {
   outline: 1px solid limegreen;
 }
 
-div {
-  margin-left: 2%;
-}
-
 .title {
   color: $titleColor;
+}
+
+.body{
+  color: $textColor;
+}
+
+.btn{
+  width: 100%;
+  z-index: 1;
+  align-items: center;
 }

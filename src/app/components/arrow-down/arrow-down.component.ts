@@ -23,7 +23,7 @@ export class ArrowDownComponent {
 
   goOnePageDown() {
     console.log(`I am trying.. current url is: ${this.url}`)
-    if(this.url === '/home')
+    if(this.url === '/home' || this.url === '/')
       this.router.navigate(['/profile']);
     else if(this.url === '/profile')
       this.router.navigate(['/skills']);

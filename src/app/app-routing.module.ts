@@ -8,7 +8,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent, data: { animation: 'home' } },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomepageComponent, data: { animation: 'home' } },
   { path: 'profile', component: ProfileComponent, data: { animation: 'profile' } },
   { path: 'skills', component: SkillsComponent, data: { animation: 'skills' } },

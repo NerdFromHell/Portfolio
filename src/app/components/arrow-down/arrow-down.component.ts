@@ -1,5 +1,8 @@
+
 import { Component } from '@angular/core';
-import { Router,NavigationStart, Event as NavigationEvent } from '@angular/router';
+import { Router } from '@angular/router';
+import { PageService } from 'src/app/services/page.service';
+import * as consts from '../../utils/consts';
 
 @Component({
   selector: 'app-arrow-down',
@@ -8,34 +11,17 @@ import { Router,NavigationStart, Event as NavigationEvent } from '@angular/route
 })
 export class ArrowDownComponent {
 
-  public url: string = "";
-  event$
+  public url!: number;
 
-  constructor(private router: Router) {
-    this.event$ = this.router.events.subscribe(
-      (event: NavigationEvent) => {
-        if(event instanceof NavigationStart) {
-          this.url = event.url;
-        }
-      }
-    );
+  constructor(private router: Router, _pageServive: PageService) {
+    _pageServive.testUrl.subscribe((pageId) => {
+      this.url = pageId;
+    })
   }
 
   goOnePageDown() {
-    console.log(`I am trying.. current url is: ${this.url}`)
-    if(this.url === '/home' || this.url === '/')
-      this.router.navigate(['/profile']);
-    else if(this.url === '/profile')
-      this.router.navigate(['/skills']);
-    else if(this.url === '/skills')
-      this.router.navigate(['/projects']);
-    else if(this.url === '/projects')
-      this.router.navigate(['/contact-me']);
-    else
-      console.log('failed')
-  }
+    console.log(`I am trying.. current url is: ${this.url}`);
+    this.router.navigate([`/${consts.Pages_Names[this.url + 1]}`]);
 
-  ngOnDestroy() {
-    this.event$.unsubscribe();
   }
 }

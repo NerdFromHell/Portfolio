@@ -1,4 +1,3 @@
-import { NavigationService } from './services/navigation.service';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +21,9 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 import { BtnComponent } from './components/btn/btn.component';
 import { ArrowUpComponent } from './components/arrow-up/arrow-up.component';
 import { ArrowDownComponent } from './components/arrow-down/arrow-down.component';
+// Services
+import { NavigationService } from './services/navigation.service';
+import { PageService } from './services/page.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,7 @@ import { ArrowDownComponent } from './components/arrow-down/arrow-down.component
     MatInputModule,
     MatCardModule
   ],
-  providers: [NavigationService],
+  providers: [NavigationService, PageService],
   bootstrap: [AppComponent]
 })
 

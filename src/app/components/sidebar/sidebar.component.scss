@@ -2,6 +2,22 @@ $backgroundColor: #30475E;
 $textColor: #DDDDDD;
 $iconColor: #DDDDDD;
 $hoverTextColor: #F05454;
+$activePageColor: #222831;
+
+a.active>.btn {
+  background-color: $hoverTextColor  !important;
+  color: $activePageColor  !important;
+
+  mat-icon {
+    color: $activePageColor  !important;
+  }
+}
+
+.linkedinImg {
+  width: 20px;
+  opacity: 0.7;
+}
+
 
 * {
   background-color: transparent;
@@ -65,6 +81,10 @@ mat-divider {
 
   mat-icon {
     color: $hoverTextColor;
+  }
+
+  .linkedinImg {
+    opacity: 1;
   }
 }
 
@@ -131,4 +151,3 @@ img {
   border: none;
   cursor: pointer;
 }
-

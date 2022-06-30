@@ -35,7 +35,7 @@ export class SidebarComponent {
     });
   }
 
-  toggleSidebar(){
+  toggleSidebar() {
     this.sidenav.toggle();
   }
 }

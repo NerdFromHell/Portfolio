@@ -1,5 +1,8 @@
+import { PageService } from './../../services/page.service';
 import { Component } from '@angular/core';
-import { Router,NavigationStart, Event as NavigationEvent } from '@angular/router';
+import { Router } from '@angular/router';
+import * as consts from '../../utils/consts';
+
 @Component({
   selector: 'app-arrow-up',
   templateUrl: './arrow-up.component.html',
@@ -7,34 +10,17 @@ import { Router,NavigationStart, Event as NavigationEvent } from '@angular/route
 })
 export class ArrowUpComponent {
 
-  public url: string = "asdf";
-  event$
+  public url: number = 0;
 
-  constructor(private router: Router) {
-    this.event$ = this.router.events.subscribe(
-      (event: NavigationEvent) => {
-        if(event instanceof NavigationStart) {
-          this.url = event.url;
-        }
-      }
-    );
+  constructor(private router: Router, _pageServive: PageService) {
+    _pageServive.testUrl.subscribe((pageId) => {
+      this.url = pageId;
+    })
   }
 
   goOnePageUp() {
-    console.log(`I am trying.. current url is: ${this.url}`)
-    if(this.url === '/profile')
-      this.router.navigate(['/home']);
-    else if(this.url === '/skills')
-      this.router.navigate(['/profile']);
-    else if(this.url === '/projects')
-      this.router.navigate(['/skills']);
-    else if(this.url === '/contact-me')
-      this.router.navigate(['/projects']);
-    else
-      console.log('failed')
-  }
+    console.log(`I am trying.. current url is: ${this.url}`);
+    this.router.navigate([`/${consts.Pages_Names[this.url - 1]}`]);
 
-  ngOnDestroy() {
-    this.event$.unsubscribe();
   }
 }

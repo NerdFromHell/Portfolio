@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/services/page.service';
+import * as consts from '../../utils/consts';
 
 @Component({
   selector: 'app-contact-me',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _pageService: PageService) {
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this._pageService.setPageId(consts.Pages.ContactMe)
   }
 
 }

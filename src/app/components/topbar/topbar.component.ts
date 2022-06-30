@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { delay } from 'rxjs/operators';
+import { UntilDestroy } from '@ngneat/until-destroy';
 
 @UntilDestroy()
 @Component({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as consts from '../../utils/consts';
 
 @Component({
   selector: 'app-page-not-found',

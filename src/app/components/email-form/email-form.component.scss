@@ -1,3 +1,21 @@
+$backgroundBoxColor: #222831;
+$textColor: #DDDDDD;
+$placeholderColor: #DDDDDD;
+$lineColor: #DDDDDD;
+// #DDDDDD #222831 #30475E #F05454
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $placeholderColor;
+  opacity: 0.5;
+  /* Firefox */
+}
+
+li>input,
+li>textarea {
+  color: $textColor;
+}
+
 * {
   box-sizing: border-box;
   padding: unset;
@@ -28,7 +46,7 @@ textarea {
   font-size: 1.6rem;
   line-height: 1.5;
   border: none;
-  background-color: whitesmoke;
+  background-color: $backgroundBoxColor;
   display: block;
   padding-left: 1rem;
 }
@@ -43,7 +61,7 @@ textarea {
   height: 2px;
   width: 0px;
   position: absolute;
-  background-color: #02add7;
+  background-color: $lineColor;
   display: inline-block;
   transition: .3s width ease-in-out;
   position: relative;
@@ -54,5 +72,5 @@ input[type=text]:focus+.line,
 input[type=email]:focus+.line,
 textarea:focus+.line {
   width: 100%;
-  background-color: #02add7;
+  background-color: $lineColor;
 }

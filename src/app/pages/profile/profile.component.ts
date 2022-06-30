@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/services/page.service';
+import * as consts from '../../utils/consts';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private _pageService: PageService) {
   }
 
+  ngOnInit() {
+    this._pageService.setPageId(consts.Pages.Profile)
+  }
 }

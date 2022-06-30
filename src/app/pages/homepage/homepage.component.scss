@@ -1,19 +1,15 @@
 $titleColor: #F05454;
 $textColor: #222831;
 
-// * {
-//   outline: 1px solid limegreen;
-// }
-
 .title {
   color: $titleColor;
 }
 
-.body{
+.body {
   color: $textColor;
 }
 
-.btn{
+.btn {
   width: 100%;
   z-index: 1;
   align-items: center;

@@ -1,8 +1,15 @@
 mat-toolbar {
-    background: #436ef8;
+    background: #30475E;
     color: white;
     height: 3.5rem;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
+
+mat-icon:hover {
+    color: #F05454;
+}
+
 
 .hideToolbarAnimation {
     transition: 0.3s;

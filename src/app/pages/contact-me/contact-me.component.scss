@@ -1,18 +1,22 @@
-$titleColor: #122631;
+$titleColor: #F05454;
+$textColor: #F05454;
+$backgroundColor: #30475E;
+$boxColor: #DDDDDD;
+// #DDDDDD #222831 #30475E #F05454
 
-img{
+img {
   margin-top: 5%;
 }
 
-mat-card{
-  background-color: transparent;
+mat-card {
+  background-color: $backgroundColor;
 }
 
-mat-card-title{
-  color:$titleColor;
+mat-card-title {
+  color: $titleColor;
 }
 
-.card{
-  max-width:60%;
+mat-card-subtitle,
+.summary {
+  color: $boxColor;
 }
-

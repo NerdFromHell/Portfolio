@@ -1,23 +1,22 @@
-
-$textColor: #30475E;
+$textColor: #222831;
 $textHoverColor: #F05454;
 $backgroundColor: #F05454;
-$backgroundHoverColor: #30475E;
+$backgroundHoverColor: #222831;
 
 
 button {
   cursor: pointer;
-  border:none;
-  font-family: 'Courier New', Courier, monospace;
 
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-top: 10px;
+  border-color: transparent;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
   width: 100%;
   max-width: 220px;
 
-  height: 50px;
+  height: 3.15rem;
   line-height: 50px;
   display: block;
   text-align: center;

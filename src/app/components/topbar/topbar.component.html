@@ -1,5 +1,5 @@
 <div *ngIf="!hideToolBar">
-  <mat-toolbar [ngClass]="hideToolBar ? 'hideToolbarAnimation' : 'showToolbarAnimation'">
+  <mat-toolbar fxFlex="70px" [ngClass]="hideToolBar ? 'hideToolbarAnimation' : 'showToolbarAnimation'">
 
     <button class="btnOption" mat-icon-button (click)="this.toggleSidebar()">
 

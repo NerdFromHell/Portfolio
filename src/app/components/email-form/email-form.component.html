@@ -6,7 +6,7 @@
         <div class="line"></div>
       </li>
       <li fxFlexOffset="2" fxFlex>
-        <input class="line-animation" placeholder="Email" type="email" id="email"  >
+        <input class="line-animation" placeholder="Email" type="email" id="email">
         <div class="line"></div>
       </li>
     </div>
@@ -16,15 +16,12 @@
     </li>
     <li class="third_row">
 
-      <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" class="line-animation"
-        placeholder="Message" id="message"></textarea>
+      <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="10" maxlength="1000"
+        class="line-animation" placeholder="Message" id="message"></textarea>
       <div class="line"></div>
     </li>
-    <li dir="rtl" >
-      <app-btn
-        (btnClick)="validate($event)"
-        text="!Send message"
-      >
+    <li dir="rtl">
+      <app-btn (btnClick)="validate($event)" text="!Send message">
       </app-btn>
     </li>
   </ul>

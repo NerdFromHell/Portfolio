@@ -6,10 +6,14 @@ mat-toolbar {
     border-top-right-radius: 5px;
 }
 
-mat-icon:hover {
+.btnOption:hover {
     color: #F05454;
 }
 
+.btnOption:active {
+    transition: 0.3s;
+    transform: rotate(360deg);
+}
 
 .hideToolbarAnimation {
     transition: 0.3s;

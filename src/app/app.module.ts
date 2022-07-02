@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 // Routing
 import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 // Components
@@ -48,7 +49,8 @@ import { PageService } from './services/page.service';
     MatIconModule,
     MatDividerModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule,
   ],
   providers: [NavigationService, PageService],
   bootstrap: [AppComponent]

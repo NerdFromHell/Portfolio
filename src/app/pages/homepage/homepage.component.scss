@@ -1,15 +1,28 @@
 $titleColor: #F05454;
 $textColor: #222831;
 
+.title,
+.body,
+.btn {
+  margin-left: 30%;
+}
+
 .title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 5rem;
   color: $titleColor;
 }
 
 .body {
   color: $textColor;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
 
 .btn {
+  margin-top: 5%;
+  max-width: 220px;
   width: 100%;
   z-index: 1;
   align-items: center;

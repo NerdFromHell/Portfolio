@@ -12,7 +12,11 @@
       <div style="z-index: 999;">
         <app-sidebar></app-sidebar>
       </div>
-      <div [@routeAnimations]="prepareRoute(outlet)">
+
+      <!-- added Flex to pass -->
+      <div
+        fxFlex="100"
+        [@routeAnimations]="prepareRoute(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
       </div>
     </div>

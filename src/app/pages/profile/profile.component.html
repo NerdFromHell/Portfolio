@@ -1,25 +1,32 @@
-<div fxLayout="column">
-  <h1>
-    Hi!
-    <br>
-    I am Yoram Izilov
-  </h1>
+<div fxLayout="row" fxLayoutAlign="space-evenly center" fxFlexFill>
+  <div div fxLayout="column" fxLayoutAlign="center start" fxFlex="50" fxFlexFill>
+    <div class="title">
+      <h1>
+        About Me:
+      </h1>
+    </div>
 
-  <p>
-    I'm a Full-stack Developer located in Israel.
-    <br>
-    I have a serious passion for delvoloping and learning new things every day,
-    <br>
-    Well-organised person, problem solver, employee with high attention to detail.
-    Fan of music, anime, games, and new tech.
-    <br>
-    Interested in the entire frontend spectrum and working on ambitious projects with positive people.
-    <br>
-    Let's make something special.
-  </p>
+    <div class="body">
+      <p>
+        Hi! My name is Izilov Yoram and I'm a full-stack developer located in southern Israel.
+        <br>I have a serious passion for development and love learning new things every day.
+        <br>I am a well-organised person, a problem solver, and an employee with high attention to detail.
+        <br>Fan of music, anime, games, and new technology.
+        <br>I'm interested in the entire full-stack spectrum and am open to diving into other fields of work on ambitious projects with positive people.
+        <br>
+        <br>Currently, I work at Shaniv Sasatech as a software engineer who does full-stack development and some automation.
+      </p>
+    </div>
 
-  <a [routerLink]="['/contact-me']" routerLinkActive="active"
-    style="text-decoration: none; color: inherit; z-index: 1;">
-    <app-btn text="Contact me!"></app-btn>
-  </a>
+    <div class="btn">
+      <a [routerLink]="['/contact-me']" routerLinkActive="active"
+        style="text-decoration: none; color: inherit; z-index: 1;">
+        <app-btn text="Contact me!"></app-btn>
+      </a>
+    </div>
+  </div>
+
+  <div fxFlex="50">
+    <img width="50%" src="https://cdn.wallpapersafari.com/78/64/JCAQVk.png" />
+  </div>
 </div>

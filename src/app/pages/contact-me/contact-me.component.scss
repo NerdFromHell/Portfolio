@@ -4,19 +4,25 @@ $backgroundColor: #30475E;
 $boxColor: #DDDDDD;
 // #DDDDDD #222831 #30475E #F05454
 
-img {
-  margin-top: 5%;
+*{
+  outline: 1px solid limegreen;
 }
 
 mat-card {
   background-color: $backgroundColor;
+  margin: 5%;
+
 }
 
 mat-card-title {
   color: $titleColor;
+  font-size: 36px;
 }
 
 mat-card-subtitle,
 .summary {
-  color: $boxColor;
+  color: #DDDDDD;
+  line-height: 1.5rem;
+  width: 55%;
+  font-weight: 500;
 }

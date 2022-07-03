@@ -4,6 +4,10 @@ $iconColor: #DDDDDD;
 $hoverTextColor: #F05454;
 $activePageColor: #222831;
 
+* {
+  background-color: transparent;
+}
+
 a.active>.btn {
   background-color: $hoverTextColor  !important;
   color: $activePageColor  !important;
@@ -16,11 +20,6 @@ a.active>.btn {
 .linkedinImg {
   width: 20px;
   opacity: 0.7;
-}
-
-
-* {
-  background-color: transparent;
 }
 
 mat-sidenav-container {

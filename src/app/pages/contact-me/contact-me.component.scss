@@ -4,14 +4,11 @@ $backgroundColor: #30475E;
 $boxColor: #DDDDDD;
 // #DDDDDD #222831 #30475E #F05454
 
-*{
-  outline: 1px solid limegreen;
-}
 
 mat-card {
   background-color: $backgroundColor;
   margin: 5%;
-
+  z-index: 0;
 }
 
 mat-card-title {
@@ -23,6 +20,5 @@ mat-card-subtitle,
 .summary {
   color: #DDDDDD;
   line-height: 1.5rem;
-  width: 55%;
   font-weight: 500;
 }

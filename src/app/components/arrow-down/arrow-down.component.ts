@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavigationService } from 'src/app/services/navigation.service';
 import { PageService } from 'src/app/services/page.service';
 import * as consts from '../../utils/consts';
 
@@ -13,7 +14,7 @@ export class ArrowDownComponent {
 
   public url!: number;
 
-  constructor(private router: Router, _pageServive: PageService) {
+  constructor(private router: Router, _pageServive: PageService, private _navigationService: NavigationService) {
     _pageServive.testUrl.subscribe((pageId) => {
       this.url = pageId;
     })
@@ -22,6 +23,7 @@ export class ArrowDownComponent {
   goOnePageDown() {
     console.log(`I am trying.. current url is: ${this.url}`);
     this.router.navigate([`/${consts.Pages_Names[this.url + 1]}`]);
+    this._navigationService.toggleSidebarVisibility(false);
 
   }
 }

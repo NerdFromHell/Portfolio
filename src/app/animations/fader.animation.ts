@@ -6,17 +6,17 @@ export const fader =
       [
         query(':enter, :leave', [
           style({
-            'z-index':'1',
-            flex: '0 0 100%',//added also in enter
+            'z-index': '1',
+            // flex: '0 0 100%',//added also in enter
             position: 'absolute',
-            // height: '100%',
+            width: '100%',
             opacity: 0,
             transform: 'translate3d(0,100%,0)'
           }),
         ]),
         // Animate the new page in
         query(':enter', [
-          animate('600ms ease', style({ opacity: 1,felx:'1', transform: 'translate3d(0,0,0)' })),
+          animate('1000ms ease', style({ opacity: 1, transform: 'translate3d(0,0,0)' })),
         ])
       ]),
 
@@ -24,17 +24,18 @@ export const fader =
       [
         query(':enter, :leave', [
           style({
-            'z-index':'1',
+            'z-index': '1',
             position: 'absolute',
-            flex: '0 0 100%',//added also in enter
-            // height: '100%',
+            // flex: '0 0 100%',//added also in enter
+            width: '100%',
+            flex: '1',
             opacity: 0,
             transform: 'translate3d(0,-100%,0)'
           }),
         ]),
         // Animate the new page in
         query(':enter', [
-          animate('600ms ease', style({ opacity: 1,flex:'1', transform: 'translate3d(0,0,0)' })),
+          animate('900ms ease', style({ opacity: 1, transform: 'translate3d(0,0,0)' })),
         ])
       ]),
   ]);

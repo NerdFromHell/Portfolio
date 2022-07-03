@@ -14,9 +14,7 @@
       </div>
 
       <!-- added Flex to pass -->
-      <div
-        fxFlex="100"
-        [@routeAnimations]="prepareRoute(outlet)">
+      <div fxFlex="row wrap" [@routeAnimations]="prepareRoute(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
       </div>
     </div>

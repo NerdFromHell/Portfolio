@@ -2,7 +2,7 @@
   <ul style="list-style: none;" class="form-group">
     <div>
       <li fxFlex="48">
-        <input class="line-animation" placeholder="Name" type="text" name="name">
+        <input class="line-animation" placeholder="Name" type="text" id="name">
         <div class="line"></div>
       </li>
       <li fxFlexOffset="2" fxFlex>
@@ -11,7 +11,7 @@
       </li>
     </div>
     <li class="second_row">
-      <input class="line-animation" placeholder="Subject" type="text" name="subject">
+      <input class="line-animation" placeholder="Subject" type="text" id="subject">
       <div class="line"></div>
     </li>
     <li class="third_row">
@@ -21,7 +21,7 @@
       <div class="line"></div>
     </li>
     <li dir="rtl">
-      <app-btn (btnClick)="validate($event)" text="!Send message">
+      <app-btn (btnClick)="onClick($event)" text="!Send message">
       </app-btn>
     </li>
   </ul>

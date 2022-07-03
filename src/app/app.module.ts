@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 // angular materials
 import { MatInputModule } from '@angular/material/input'
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -25,6 +26,7 @@ import { ArrowDownComponent } from './components/arrow-down/arrow-down.component
 // Services
 import { NavigationService } from './services/navigation.service';
 import { PageService } from './services/page.service';
+import { EmailSenderService } from './services/email-sender.service';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { PageService } from './services/page.service';
     ArrowDownComponent,
   ],
   imports: [
+    HttpClientModule,
     RouterModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -52,7 +55,7 @@ import { PageService } from './services/page.service';
     MatCardModule,
     MatSnackBarModule,
   ],
-  providers: [NavigationService, PageService],
+  providers: [NavigationService, PageService, EmailSenderService],
   bootstrap: [AppComponent]
 })
 

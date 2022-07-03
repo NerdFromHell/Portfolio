@@ -7,15 +7,16 @@ export const fader =
         query(':enter, :leave', [
           style({
             'z-index':'1',
+            flex: '0 0 100%',//added also in enter
             position: 'absolute',
-            height: '100%',
+            // height: '100%',
             opacity: 0,
             transform: 'translate3d(0,100%,0)'
           }),
         ]),
         // Animate the new page in
         query(':enter', [
-          animate('600ms ease', style({ opacity: 1, transform: 'translate3d(0,0,0)' })),
+          animate('600ms ease', style({ opacity: 1,felx:'1', transform: 'translate3d(0,0,0)' })),
         ])
       ]),
 
@@ -25,14 +26,15 @@ export const fader =
           style({
             'z-index':'1',
             position: 'absolute',
-            height: '100%',
+            flex: '0 0 100%',//added also in enter
+            // height: '100%',
             opacity: 0,
             transform: 'translate3d(0,-100%,0)'
           }),
         ]),
         // Animate the new page in
         query(':enter', [
-          animate('600ms ease', style({ opacity: 1, transform: 'translate3d(0,0,0)' })),
+          animate('600ms ease', style({ opacity: 1,flex:'1', transform: 'translate3d(0,0,0)' })),
         ])
       ]),
   ]);

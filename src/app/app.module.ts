@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
 // Routing
 import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 // Components
@@ -54,6 +55,7 @@ import { EmailSenderService } from './services/email-sender.service';
     MatInputModule,
     MatCardModule,
     MatSnackBarModule,
+    MatGridListModule,
   ],
   providers: [NavigationService, PageService, EmailSenderService],
   bootstrap: [AppComponent]

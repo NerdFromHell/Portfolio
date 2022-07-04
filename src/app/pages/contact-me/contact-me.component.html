@@ -1,24 +1,26 @@
 <div fxLayout="column">
-  <div fxLayout="row">
-    <mat-card fxFlex="60">
-      <mat-card-title>Contact me</mat-card-title>
-      <mat-card-subtitle>Izilov Yoram</mat-card-subtitle>
-      <mat-card-content class="summary">
-        All messages sent from here go straight into my inbox.
-        <br>I'm also available on Linkedin if that's your preference :)
-      </mat-card-content>
-      <mat-card-content>
-        <app-email-form ></app-email-form>
-      </mat-card-content>
-    </mat-card>
+  <div fxFlex="100%" fxLayout="row wrap">
+    <div fxFlex="65%" fxFlex.sm="100%">
 
+      <mat-card>
+        <mat-card-title>Contact me</mat-card-title>
+        <mat-card-subtitle>Izilov Yoram</mat-card-subtitle>
+        <mat-card-content class="summary">
+          All messages sent from here go straight into my inbox.
+          <br>I'm also available on Linkedin if that's your preference :)
+        </mat-card-content>
+        <mat-card-content>
+          <app-email-form ></app-email-form>
+        </mat-card-content>
+      </mat-card>
+    </div>
 
-    <div fxFlex="40">
-      somthing
+    <div fxFlex="35%" fxFlex.sm="100%" fxLayoutAlign="center center">
+      somthing for the future
     </div>
   </div>
 
-  <div class="socials" fxLayout="column" fxLayoutAlign="center center" >
+  <div class="socials" fxFLex="100%" fxLayout="column" fxLayoutAlign="center center">
       other ways:
       <div class="links" fxLayout="row" fxLayoutGap="5px">
 

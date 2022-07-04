@@ -9,7 +9,9 @@ $boxColor: #DDDDDD;
 
 mat-card {
   background-color: $backgroundColor;
-  margin: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   z-index: 0;
 }
 
@@ -23,10 +25,6 @@ mat-card-subtitle,
   color: #DDDDDD;
   line-height: 1.5rem;
   font-weight: 500;
-}
-
-.socials {
-  margin-top: -5%;
 }
 
 .links {

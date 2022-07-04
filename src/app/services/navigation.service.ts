@@ -20,7 +20,7 @@ export class NavigationService {
 
     getOpen() {
         this.observer
-            .observe(['(max-aspect-ratio: 1/1)'])
+            .observe(['(max-width: 960px)'])
             .pipe(delay(1), untilDestroyed(this))
             .subscribe((res) => {
                 if (res.matches) {

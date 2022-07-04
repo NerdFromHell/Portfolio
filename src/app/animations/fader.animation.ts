@@ -26,11 +26,10 @@ export const fader =
           style({
             'z-index': '1',
             position: 'absolute',
-            // flex: '0 0 100%',//added also in enter
+            // flex: '1 1 100%',//added also in enter
             width: '100%',
-            flex: '1',
             opacity: 0,
-            transform: 'translate3d(0,-100%,0)'
+            transform: 'translate3d(0,-100vh,0)'
           }),
         ]),
         // Animate the new page in

@@ -3,13 +3,15 @@ $textColor: #F05454;
 $backgroundColor: #30475E;
 $boxColor: #DDDDDD;
 // #DDDDDD #222831 #30475E #F05454
-// :host {
-//   min-height: 100%;
-// }
+
+.mat-card-div {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%
+}
 
 mat-card {
   background-color: $backgroundColor;
-  margin: 5%;
   z-index: 0;
 }
 
@@ -25,15 +27,12 @@ mat-card-subtitle,
   font-weight: 500;
 }
 
-.socials {
-  margin-top: -5%;
-}
-
 .links {
   img {
     height: 6vh;
   }
 }
-.links:hover{
+
+.links:hover {
   cursor: pointer;
 }

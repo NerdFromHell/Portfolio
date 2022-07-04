@@ -35,7 +35,8 @@ export class SidebarComponent {
     });
   }
 
-  toggleSidebar() {
-    this.sidenav.toggle();
+  toggleSidebarSideMode() {
+    if (this.sidenav.mode === 'side')
+      this.sidenav.toggle();
   }
 }

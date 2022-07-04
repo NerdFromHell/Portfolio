@@ -3,7 +3,9 @@ $textColor: #F05454;
 $backgroundColor: #30475E;
 $boxColor: #DDDDDD;
 // #DDDDDD #222831 #30475E #F05454
-
+// :host {
+//   min-height: 100%;
+// }
 
 mat-card {
   background-color: $backgroundColor;
@@ -21,4 +23,17 @@ mat-card-subtitle,
   color: #DDDDDD;
   line-height: 1.5rem;
   font-weight: 500;
+}
+
+.socials {
+  margin-top: -5%;
+}
+
+.links {
+  img {
+    height: 6vh;
+  }
+}
+.links:hover{
+  cursor: pointer;
 }

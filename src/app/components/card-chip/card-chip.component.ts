@@ -7,18 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardChipComponent implements OnInit {
 
-
   @Input() imageUrl: string = '';
   @Input() skillName: string = '';
 
   @Input()
   set image(url: string) {
-		this.imageUrl = url;
-	}
+    this.imageUrl = url;
+  }
   @Input()
-	set skill(name: string) {
-		this.skillName = name;
-	}
+  set skill(name: string) {
+    this.skillName = name;
+  }
 
   constructor() { }
 

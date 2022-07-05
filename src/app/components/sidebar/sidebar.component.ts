@@ -36,6 +36,7 @@ export class SidebarComponent {
   }
 
   toggleSidebarSideMode() {
+    window.scroll(0, 0);
     if (this.sidenav.mode === 'side')
       this.sidenav.toggle();
     else

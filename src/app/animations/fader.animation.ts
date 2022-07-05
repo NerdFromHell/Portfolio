@@ -7,11 +7,10 @@ export const fader =
         query(':enter, :leave', [
           style({
             'z-index': '1',
-            // flex: '0 0 100%',//added also in enter
             position: 'absolute',
             width: '100%',
             opacity: 0,
-            transform: 'translate3d(0,100%,0)'
+            transform: 'translate3d(0,100vh,0)'
           }),
         ]),
         // Animate the new page in
@@ -26,7 +25,6 @@ export const fader =
           style({
             'z-index': '1',
             position: 'absolute',
-            // flex: '1 1 100%',//added also in enter
             width: '100%',
             opacity: 0,
             transform: 'translate3d(0,-100vh,0)'

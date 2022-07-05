@@ -25,11 +25,14 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 import { BtnComponent } from './components/btn/btn.component';
 import { ArrowUpComponent } from './components/arrow-up/arrow-up.component';
 import { ArrowDownComponent } from './components/arrow-down/arrow-down.component';
+import { MapFixedLocationComponent } from './components/map-fixed-location/map-fixed-location.component';
 // Services
 import { NavigationService } from './services/navigation.service';
 import { PageService } from './services/page.service';
 import { EmailSenderService } from './services/email-sender.service';
 import { CardChipComponent } from './components/card-chip/card-chip.component';
+//maps
+
 
 @NgModule({
   declarations: [
@@ -42,6 +45,7 @@ import { CardChipComponent } from './components/card-chip/card-chip.component';
     ArrowUpComponent,
     ArrowDownComponent,
     CardChipComponent,
+    MapFixedLocationComponent,
   ],
   imports: [
     HttpClientModule,

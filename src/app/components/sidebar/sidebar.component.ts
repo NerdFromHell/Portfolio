@@ -38,5 +38,8 @@ export class SidebarComponent {
   toggleSidebarSideMode() {
     if (this.sidenav.mode === 'side')
       this.sidenav.toggle();
+    else
+      this._navigationService.toggleToolbarVisibility(false)
+
   }
 }

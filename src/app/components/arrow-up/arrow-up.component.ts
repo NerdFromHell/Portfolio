@@ -23,6 +23,7 @@ export class ArrowUpComponent {
     console.log(`I am trying.. current url is: ${this.url}`);
     this.router.navigate([`/${consts.Pages_Names[this.url - 1]}`]);
     this._navigationService.toggleSidebarVisibility(false);
+    this._navigationService.toggleToolbarVisibility(false);
   }
 
 

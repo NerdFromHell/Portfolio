@@ -1,7 +1,6 @@
 <div fxLayout="column">
-  <div fxFlex="100%" fxLayout="row wrap">
-    <div fxFlex="65%" fxFlex.sm="100%">
-
+  <div fxFlex="100" fxLayout="row" fxLayout.lt-md="column">
+    <div class="mat-card-div" fxFlex="65" fxFlex.lt-md="100">
       <mat-card>
         <mat-card-title>Contact me</mat-card-title>
         <mat-card-subtitle>Izilov Yoram</mat-card-subtitle>
@@ -10,19 +9,18 @@
           <br>I'm also available on Linkedin if that's your preference :)
         </mat-card-content>
         <mat-card-content>
-          <app-email-form ></app-email-form>
+          <app-email-form></app-email-form>
         </mat-card-content>
       </mat-card>
     </div>
-
-    <div fxFlex="35%" fxFlex.sm="100%" fxLayoutAlign="center center">
-      somthing for the future
+    <div fxFlex="35" fxFlex.lt-md="100">
+      test
     </div>
   </div>
 
-  <div class="socials" fxFLex="100%" fxLayout="column" fxLayoutAlign="center center">
-      other ways:
-      <div class="links" fxLayout="row" fxLayoutGap="5px">
+  <div class="socials" fxLayout="column" fxLayoutAlign="center center">
+    other ways:
+    <div class="links" fxLayout="row" fxLayoutGap="5px">
 
       <a href="https://il.linkedin.com/in/yoram-izilov" target="_blank" style="text-decoration: none; color: inherit;">
         <img src="https://www.drupal.org/files/project-images/linkedin_circle_logo.png">
@@ -30,6 +28,6 @@
       <a href="https://github.com/NerdFromHell" target="_blank" style="text-decoration: none; color: inherit;">
         <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png">
       </a>
-      </div>
+    </div>
   </div>
 </div>

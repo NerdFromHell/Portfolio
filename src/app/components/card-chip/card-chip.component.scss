@@ -1,0 +1,29 @@
+img {
+  height: 10vh;
+}
+
+p {
+  color: #F05454;
+}
+
+mat-card{
+  background-color: #30475E;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+  width: 12vh;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: #222831;
+}
+
+.mat-card>.mat-divider-horizontal {
+  background-color: #DDDDDD;
+  position: relative;
+  left: 0;
+  width: 100%;
+}

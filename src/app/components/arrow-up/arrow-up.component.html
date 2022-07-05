@@ -1,5 +1,13 @@
-<div *ngIf="this.url !== 0" class="arrow-up" fxFlex="100" fxLayoutAlign="center">
-  <button (click)="this.goOnePageUp()" mat-icon-button>
-    <mat-icon>keyboard_arrow_up</mat-icon>
-  </button>
+<div *ngIf="this.url !== 0" class="arrow-down" fxFlex="100" fxLayoutAlign="center end">
+  <div fxShow.gt-sm fxHide>
+    <button (click)="this.goOnePageUp(false)" mat-icon-button>
+      <mat-icon>keyboard_arrow_up</mat-icon>
+    </button>
+  </div>
+
+  <div fxShow.lt-md fxHide>
+    <button (click)="this.goOnePageUp(true)" mat-icon-button>
+      <mat-icon>keyboard_arrow_up</mat-icon>
+    </button>
+  </div>
 </div>

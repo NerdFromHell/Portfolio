@@ -1,5 +1,14 @@
 <div *ngIf="this.url !== 4" class="arrow-down" fxFlex="100" fxLayoutAlign="center end">
-  <button (click)="this.goOnePageDown()" mat-icon-button>
-    <mat-icon>keyboard_arrow_down</mat-icon>
-  </button>
+  <div fxShow.gt-sm fxHide>
+    <button (click)="this.goOnePageDown(false)" mat-icon-button>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+
+  <div fxShow.lt-md fxHide>
+    <button (click)="this.goOnePageDown(true)" mat-icon-button>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
 </div>
+

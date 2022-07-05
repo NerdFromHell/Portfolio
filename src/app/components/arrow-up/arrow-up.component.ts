@@ -20,9 +20,9 @@ export class ArrowUpComponent {
   }
 
   goOnePageUp(isOnSmallScreen: boolean) {
-    console.log(`I am trying.. current url is: ${this.url}`);
+    window.scroll(0, 0);
     this.router.navigate([`/${consts.Pages_Names[this.url - 1]}`]);
-    if(isOnSmallScreen === true){
+    if (isOnSmallScreen === true) {
       this._navigationService.toggleToolbarVisibility(false)
     }
     else {

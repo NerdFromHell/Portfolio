@@ -9,6 +9,11 @@ import * as consts from '../../utils/consts';
 })
 export class SkillsComponent implements OnInit {
 
+
+  skillsLearned = consts.Skills_Learned;
+  skillsLearning = consts.Skills_Learning;
+
+
   constructor(private _pageService: PageService) {
   }
 

@@ -1,43 +1,25 @@
-<div fxLayout="column">
-  <div fxFLex="100" fxLayoutAlign="start center" style="margin-left: 5%; margin-top: 5%;">
+<div fxLayout="column" style="margin: 5%;">
+  <div fxFLex="100" fxLayoutAlign="start center">
     <h1>Learned and learning more of:</h1>
   </div>
-  <div  fxLayout="row wrap" fxLayoutAlign="space-between center" style="margin: 5%;" >
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="angular" image="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/angular-js-512.png"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="TypeScript" image="https://cdn-icons-png.flaticon.com/512/919/919832.png"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="Sass/CSS" image="https://www.seekpng.com/png/full/377-3772047_sass-logo.png"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="HTML" image="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/html5-512.png"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="NodeJS" image="https://cdn-icons-png.flaticon.com/512/919/919825.png"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="JAVA" image="https://asprise.com/res/img/menu/java.png"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="C#" image="https://iconape.com/wp-content/files/sh/51404/svg/c--4.svg"></app-card-chip>
-    </div>
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="MySQL" image="https://styles.redditmedia.com/t5_2qm6k/styles/communityIcon_dhjr6guc03x51.png?width=256&s=3e825b7205c7f497d4695028e358d26ee359f84b"></app-card-chip>
+  <div fxLayout="row wrap" fxLayoutAlign="start center">
+    <div class="grid" fxFlex="16.6" fxFlex.lt-lg="25" fxFlex.lt-md="33" fxFlex.lt-sm="50" fxLayoutAlign="center center"
+      *ngFor="let skillLearned of skillsLearned">
+      <app-card-chip skill="{{skillLearned.name}}" image="{{skillLearned.img}}">
+      </app-card-chip>
     </div>
   </div>
 
 
 
-  <div fxFLex="100" fxLayoutAlign="start center" style="margin-left: 5%;">
+  <div fxFLex="100" fxLayoutAlign="start center">
     <h1>Currently learning:</h1>
   </div>
-  <div   fxLayout="row wrap" fxLayoutAlign="space-between center" style="margin: 5%;">
-    <div class="grid" fxFlex="25" fxFlex.lt-md="33" fxLayoutAlign="center center">
-      <app-card-chip skill="MongoDB" image="https://www.svgrepo.com/show/331488/mongodb.svg"></app-card-chip>
+  <div fxLayout="row wrap" fxLayoutAlign="start center">
+    <div class="grid" fxFlex="16.6" fxFlex.lt-lg="25" fxFlex.lt-md="33" fxFlex.lt-sm="50" fxLayoutAlign="center center"
+      *ngFor="let skillLearning of skillsLearning">
+      <app-card-chip skill="{{skillLearning.name}}" image="{{skillLearning.img}}">
+      </app-card-chip>
     </div>
-  </div>
 
-</div>
+  </div>

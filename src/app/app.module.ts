@@ -15,6 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatChipsModule } from '@angular/material/chips';
 // Routing
 import { AppRoutingModule, RoutingPagesComponent } from './app-routing.module';
 // Components
@@ -28,6 +29,7 @@ import { ArrowDownComponent } from './components/arrow-down/arrow-down.component
 import { NavigationService } from './services/navigation.service';
 import { PageService } from './services/page.service';
 import { EmailSenderService } from './services/email-sender.service';
+import { CardChipComponent } from './components/card-chip/card-chip.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { EmailSenderService } from './services/email-sender.service';
     BtnComponent,
     ArrowUpComponent,
     ArrowDownComponent,
+    CardChipComponent,
   ],
   imports: [
     HttpClientModule,
@@ -56,6 +59,7 @@ import { EmailSenderService } from './services/email-sender.service';
     MatCardModule,
     MatSnackBarModule,
     MatGridListModule,
+    MatChipsModule,
   ],
   providers: [NavigationService, PageService, EmailSenderService],
   bootstrap: [AppComponent]

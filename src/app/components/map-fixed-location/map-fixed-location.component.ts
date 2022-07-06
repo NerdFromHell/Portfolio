@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import * as consts from '../../utils/consts';
 import * as L from 'leaflet';
 
 @Component({
@@ -14,6 +15,7 @@ export class MapFixedLocationComponent implements AfterViewInit {
     this.map = L.map('map', {
       center: [31.312583, 34.620854],
       zoom: 8,
+      dragging: !L.Browser.mobile
       // attributionControl: false,
     });
 
@@ -31,7 +33,7 @@ export class MapFixedLocationComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initMap();
-    const marker = L.marker([31.312583, 34.620854]);
+    const marker = L.marker([31.312583, 34.620854], { icon: L.icon(consts.Marker_Icon) });
     marker.addTo(this.map);
   }
 

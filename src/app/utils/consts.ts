@@ -28,3 +28,11 @@ export const Skills_Learned = [
 export const Skills_Learning = [
     { id: 1, name: 'MongoDB', img: '../../../assets/skills images/mongodb.png' }
 ];
+
+//IconOptions type
+export const Marker_Icon: any = {
+    iconUrl: '../../../assets/map marker image/map-marker-icon.png',
+    iconSize:     [30 , 30], // size of the icon
+    iconAnchor:   [15, 40], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+}

@@ -25,6 +25,12 @@ export const Skills_Learned = [
     { id: 8, name: 'MySQL', img: '../../../assets/skills images/mysql.png' },
 ];
 
+export const Projects_Detailes = [
+  { name: 'Portfolio',
+    image: '../../../assets/projects images/Portfolio.png',
+    skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+   },
+];
 export const Skills_Learning = [
     { id: 1, name: 'MongoDB', img: '../../../assets/skills images/mongodb.png' }
 ];

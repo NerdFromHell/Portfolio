@@ -5,7 +5,7 @@
   <div fxLayout="row wrap" fxLayoutAlign="start center">
     <div class="grid" fxFlex="16.6" fxFlex.lt-lg="25" fxFlex.lt-md="33" fxFlex.lt-sm="50" fxLayoutAlign="center center"
       *ngFor="let skillLearned of skillsLearned">
-      <app-card-chip skill="{{skillLearned.name}}" image="{{skillLearned.img}}">
+      <app-card-chip [skill]="skillLearned.name" [image]="skillLearned.img">
       </app-card-chip>
     </div>
   </div>
@@ -18,7 +18,7 @@
   <div fxLayout="row wrap" fxLayoutAlign="start center">
     <div class="grid" fxFlex="16.6" fxFlex.lt-lg="25" fxFlex.lt-md="33" fxFlex.lt-sm="50" fxLayoutAlign="center center"
       *ngFor="let skillLearning of skillsLearning">
-      <app-card-chip skill="{{skillLearning.name}}" image="{{skillLearning.img}}">
+      <app-card-chip [skill]="skillLearning.name" [image]="skillLearning.img">
       </app-card-chip>
     </div>
 

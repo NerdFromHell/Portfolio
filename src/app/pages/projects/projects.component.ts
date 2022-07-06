@@ -9,11 +9,14 @@ import * as consts from '../../utils/consts';
 })
 export class ProjectsComponent implements OnInit {
 
+  projectsDetails = consts.Projects_Detailes;
+
   constructor(private _pageService: PageService) {
   }
 
   ngOnInit() {
-    this._pageService.setPageId(consts.Pages.Projects)
+    this._pageService.setPageId(consts.Pages.Projects);
+    console.log(this.projectsDetails[0]);
   }
 
 }

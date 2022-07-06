@@ -31,6 +31,7 @@ import { NavigationService } from './services/navigation.service';
 import { PageService } from './services/page.service';
 import { EmailSenderService } from './services/email-sender.service';
 import { CardChipComponent } from './components/card-chip/card-chip.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 //maps
 
 
@@ -46,6 +47,7 @@ import { CardChipComponent } from './components/card-chip/card-chip.component';
     ArrowDownComponent,
     CardChipComponent,
     MapFixedLocationComponent,
+    ProjectCardComponent,
   ],
   imports: [
     HttpClientModule,

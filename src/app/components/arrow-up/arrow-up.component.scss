@@ -1,7 +1,15 @@
 .mat-icon-button {
+  // position: fixed;
+  // top: 0;
+  // text-align: center;
+  // color: #F05454;
+  // background-color: #DDDDDD;
+
   position: fixed;
-  top: 0;
-  text-align: center;
+  margin: 1% auto; /* Will not center vertically and won't work in IE6/7. */
+  top:0;
+  left: 0;
+  right: 0;
   color: #F05454;
   background-color: #DDDDDD;
 

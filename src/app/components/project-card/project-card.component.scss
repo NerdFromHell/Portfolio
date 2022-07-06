@@ -1,0 +1,29 @@
+img{
+  height:18vh;
+}
+mat-chip>img {
+  height: 3vh;
+  padding-right: 5px;
+}
+
+p {
+  color: #F05454;
+}
+
+mat-card{
+  background-color: #30475E;
+  display: flex;
+  height: 30vh;
+  width: 60vh;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: #222831;
+}
+
+.mat-card>.mat-divider-vertical {
+  background-color: #DDDDDD;
+  position: relative;
+  left: 0;
+
+}

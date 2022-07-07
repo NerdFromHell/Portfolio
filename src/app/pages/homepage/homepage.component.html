@@ -1,5 +1,5 @@
-<div fxLayout="row" fxLayoutAlign="space-evenly center" style="margin-top: 1%;">
-  <div fxLayout="column" fxLayoutAlign="center start" fxFlex="50" fxFlexFill>
+<div class="homepage-body" fxFlex="100" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+  <div fxLayout="column" fxLayoutAlign="center start" fxFlex="60" fxFlex.lt-md="100" >
     <div class="title">
       <h1>
         Hello,
@@ -9,19 +9,19 @@
     </div>
 
     <div class="body">
-      <p>
+      <p >
         I am a self-taught full-stack developer.
         <br> I look forward to working for a company that appreciates my value.
       </p>
     </div>
 
     <div class="btn">
-      <a [routerLink]="['/contact-me']" routerLinkActive="active" style="text-decoration: none; color: inherit;">
+      <a [routerLink]="['/contact-me']" routerLinkActive="active">
         <app-btn text="Hire me!"></app-btn>
       </a>
     </div>
   </div>
-  <div fxFlex="50">
-    <img width="50%" src="https://cdn.wallpapersafari.com/78/64/JCAQVk.png" />
+  <div class="image-container" fxLayoutAlign="center center" fxFlex="40" fxFlex.lt-md="100">
+    <img src="https://cdn.wallpapersafari.com/78/64/JCAQVk.png" />
   </div>
 </div>

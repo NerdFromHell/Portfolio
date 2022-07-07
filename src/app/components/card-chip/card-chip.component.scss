@@ -6,7 +6,7 @@ p {
   color: #F05454;
 }
 
-mat-card{
+mat-card {
   background-color: #30475E;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,10 @@ mat-card{
   align-items: center;
   height: 18vh;
   width: 12vh;
+}
+
+mat-chip {
+  text-align: center;
 }
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {

@@ -7,23 +7,24 @@
     </mat-chip>
   </mat-chip-list>
 </mat-card> -->
-<div fxLayout="row" fxFlex="100">
-<mat-card style="margin: 5%;">
-  <div fxLayout="column" fxFlex="70" fxLayoutAlign="space-between center">
-  <img src="{{projectDetails.image}}">
-  <p style="color: lightred; font-weight:600;">
-    {{projectDetails.name}}
-  </p></div>
-  <mat-divider vertical="true"></mat-divider>
-  <div fxLayout="column" fxFlex="30" >
-  <mat-chip-list>
-    <div *ngFor="let skillDetails of projectDetails.skills" style="padding-left: 5px;">
-      <mat-chip selected>
-        <img src="{{skillDetails.img}}">
-        <p>{{skillDetails.name}}</p>
-      </mat-chip>
+<div class="porject-card" fxLayout="row" fxFlex="100">
+  <mat-card>
+    <div fxLayout="column" fxFlex="70" fxLayoutAlign="space-between center">
+      <img src="{{projectDetails.image}}">
+      <p style="color: lightred; font-weight:600;">
+        {{projectDetails.name}}
+      </p>
     </div>
-  </mat-chip-list>
-</div>
-</mat-card>
+    <mat-divider vertical="true"></mat-divider>
+    <div fxLayout="column" fxFlex="30">
+      <mat-chip-list>
+        <div *ngFor="let skillDetails of projectDetails.skills">
+          <mat-chip selected>
+            <img src="{{skillDetails.img}}">
+            <p>{{skillDetails.name}}</p>
+          </mat-chip>
+        </div>
+      </mat-chip-list>
+    </div>
+  </mat-card>
 </div>

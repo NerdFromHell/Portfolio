@@ -1,21 +1,66 @@
-img{
-  height:18vh;
+mat-card {
+  background-color: #30475E;
+  display: flex;
+  max-height: 350px;
+  max-width: 400px;
+  margin: 5%;
+
+
+
+  //zooming in and out on hover on project card
+  &:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.5);
+    position: relative;
+    z-index: 10;
+
+    mat-chip {
+      background-color: #30475E !important;
+    }
+
+    background-color: #222831 !important;
+  }
+
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
+
+  mat-chip {
+    background-color: #222831 !important;
+  }
 }
+
+
+
+
+
+
+
+
+img {
+  height: 18vh;
+  max-height: 100px;
+}
+
+mat-chip-list {
+  padding-left: 5px;
+}
+
+mat-chip {
+  text-align: center;
+  max-width: 100px;
+}
+
 mat-chip>img {
   height: 3vh;
   padding-right: 5px;
+
+  min-height: 10px;
 }
 
 p {
   color: #F05454;
 }
 
-mat-card{
-  background-color: #30475E;
-  display: flex;
-  height: 30vh;
-  width: 60vh;
-}
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
   background-color: #222831;

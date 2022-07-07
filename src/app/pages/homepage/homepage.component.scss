@@ -17,9 +17,10 @@ $textColor: #30475E;
   line-height: 5rem;
   color: $titleColor;
 }
-h1{
-  margin-top:1rem;
-  margin-bottom:1rem;
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .body {
@@ -29,11 +30,13 @@ h1{
   padding-left: 1.5rem;
   width: 60%;
 }
+
 @media only screen and (max-width: 960px) {
   .body {
-     width: 75%;
+    width: 75%;
   }
-  img{
+
+  img {
     height: 60vh;
   }
 }
@@ -46,14 +49,16 @@ h1{
   z-index: 1;
   align-items: center;
 }
-a{
+
+a {
   text-decoration: none;
   color: inherit;
 }
 
-img{
+img {
   height: 90vh;
 }
+
 .image-container {
   height: 100vh;
 }

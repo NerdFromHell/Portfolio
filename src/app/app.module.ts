@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 // angular materials
 import { MatInputModule } from '@angular/material/input'
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -67,7 +68,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     MatGridListModule,
     MatChipsModule,
   ],
-  providers: [NavigationService, PageService, EmailSenderService],
+  providers: [NavigationService, PageService, EmailSenderService, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 

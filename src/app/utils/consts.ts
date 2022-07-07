@@ -28,6 +28,7 @@ export const Skills_Learned = [
 export const Projects_Detailes = [
     {
         name: 'Portfolio',
+        // LinkDetails: { linkName: 'github', linkUrl: 'git' },
         image: '../../../assets/projects images/Portfolio.png',
         skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
     },

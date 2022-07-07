@@ -1,5 +1,5 @@
-<div fxLayout="row" fxLayoutAlign="space-evenly center" style="margin-top: 1%;">
-  <div div fxLayout="column" fxLayoutAlign="center start" fxFlex="50" fxFlexFill>
+<div class="profile-body" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+  <div div fxLayout="column" fxLayoutAlign="center start" fxFlex="60" fxFlex.lt-md="100">
     <div class="title">
       <h1>
         About Me:
@@ -21,14 +21,13 @@
     </div>
 
     <div class="btn">
-      <a [routerLink]="['/contact-me']" routerLinkActive="active"
-        style="text-decoration: none; color: inherit; z-index: 1;">
+      <a [routerLink]="['/contact-me']" routerLinkActive="active">
         <app-btn text="Contact me!"></app-btn>
       </a>
     </div>
   </div>
 
-  <div fxFlex="50">
-    <img width="50%" src="https://www.teahub.io/photos/full/39-396452_anime-profile-picture-girl.jpg" />
+  <div fxFlex="40" fxFlex.lt-md="100">
+    <img src="https://www.teahub.io/photos/full/39-396452_anime-profile-picture-girl.jpg" />
   </div>
 </div>

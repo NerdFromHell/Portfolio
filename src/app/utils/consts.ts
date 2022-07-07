@@ -16,8 +16,8 @@ export const Pages_Names: { [page: number]: string } = {
 
 export const Skills_Learned = [
     { id: 1, name: 'angular', img: '../../../assets/skills images/angular.png' },
-    { id: 2, name: 'TypeScript', img: '../../../assets/skills images/typescript.png' },
-    { id: 3, name: 'Sass/CSS', img: '../../../assets/skills images/sass.png' },
+    { id: 2, name: 'Type Script', img: '../../../assets/skills images/typescript.png' },
+    { id: 3, name: 'Sass/ CSS', img: '../../../assets/skills images/sass.png' },
     { id: 4, name: 'HTML', img: '../../../assets/skills images/html.png' },
     { id: 5, name: 'NodeJS', img: '../../../assets/skills images/nodeJS.png' },
     { id: 6, name: 'JAVA', img: '../../../assets/skills images/java.png' },
@@ -26,10 +26,36 @@ export const Skills_Learned = [
 ];
 
 export const Projects_Detailes = [
-  { name: 'Portfolio',
-    image: '../../../assets/projects images/Portfolio.png',
-    skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
-   },
+    {
+        name: 'Portfolio',
+        image: '../../../assets/projects images/Portfolio.png',
+        skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+    },
+    {
+        name: 'Portfolio',
+        image: '../../../assets/projects images/Portfolio.png',
+        skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+    },
+    {
+        name: 'Portfolio',
+        image: '../../../assets/projects images/Portfolio.png',
+        skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+    },
+    {
+        name: 'Portfolio',
+        image: '../../../assets/projects images/Portfolio.png',
+        skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+    },
+    {
+        name: 'Portfolio',
+        image: '../../../assets/projects images/Portfolio.png',
+        skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+    },
+    {
+        name: 'Portfolio',
+        image: '../../../assets/projects images/Portfolio.png',
+        skills: [Skills_Learned[0], Skills_Learned[1], Skills_Learned[2], Skills_Learned[3]]
+    },
 ];
 export const Skills_Learning = [
     { id: 1, name: 'MongoDB', img: '../../../assets/skills images/mongodb.png' }
@@ -38,7 +64,7 @@ export const Skills_Learning = [
 //IconOptions type
 export const Marker_Icon: any = {
     iconUrl: '../../../assets/map marker image/map-marker-icon.png',
-    iconSize:     [30 , 30], // size of the icon
-    iconAnchor:   [15, 40], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    iconSize: [30, 30], // size of the icon
+    iconAnchor: [15, 40], // point of the icon which will correspond to marker's location
+    popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 }

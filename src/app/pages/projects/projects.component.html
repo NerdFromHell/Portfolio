@@ -1,3 +1,9 @@
-<div *ngFor="let projectDetails of projectsDetails">
-  <app-project-card [project]="projectDetails"></app-project-card>
+<div fxLayout="column" style="margin-top: 5%;">
+  <div fxLayout="row wrap" fxLayoutAlign="start center">
+    <div class="grid" fxFlex="33" fxFlex.lt-lg="50" fxFlex.lt-md="100" fxLayoutAlign="center center"
+      *ngFor="let projectDetails of projectsDetails">
+      <app-project-card [project]="projectDetails"></app-project-card>
+    </div>
+
+  </div>
 </div>
